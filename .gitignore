@@ -1,0 +1,11 @@
+*.pyc
+dexy.egg-info
+output/
+output-long/
+output-site/
+.cache/
+logs/
+*.swp
+build
+dist
+cover/

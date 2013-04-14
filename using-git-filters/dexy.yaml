@@ -1,0 +1,7 @@
+doc.md|jinja|markdown|easyhtml:
+    - dexy-templates.repo|gitlog:
+          - contents: https://github.com/ananelson/dexy-templates
+    - dexy-templates.repo|gitcommit:
+          - contents: https://github.com/ananelson/dexy-templates
+    - dexy-templates.repo|repo:
+          - contents: https://github.com/ananelson/dexy-templates
