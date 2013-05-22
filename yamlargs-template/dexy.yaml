@@ -1,0 +1,3 @@
+- index.rst|rstbody:
+    - ws_template: _home.html
+- "*/index.rst|yamlargs|rstbody"
