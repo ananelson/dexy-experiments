@@ -1,0 +1,3 @@
+I am in subdir. But I can document stuff in the root dir.
+
+{{ d['/home.txt'] }}
