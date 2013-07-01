@@ -13,3 +13,6 @@ Here is the result of running this:
 {{ highlight(cell.input, cell.language) }}
 <!-- section "end" -->
 
+Here is a test of foo:
+
+{{ foo("bar") }}
