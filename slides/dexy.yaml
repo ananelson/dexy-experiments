@@ -1,0 +1,7 @@
+assets:
+    - .js
+    - .css
+
+
+slides.md|jinja|slides:
+    - ws-template: _slides.html
