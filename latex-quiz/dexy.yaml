@@ -1,0 +1,6 @@
+quiz.tex|jinja|latex:
+    - questions.tex|idio|t
+    # Define a variable named 'questions' available to jinja templates.
+    - jinja: {
+        variables: { questions: [2, 4, 5, 8], scramble: True }
+        }

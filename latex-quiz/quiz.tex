@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{color}
+
+\setlength\parindent{0pt}
+
+\begin{document}
+
+% Create a shortcut to the question bank file
+
+<% set QAs = d['questions.tex|idio|t'] %>
+
+\section{Manual Quiz}
+
+Today's astronomy quiz:
+
+1. << QAs.q1 >>
+
+2. << QAs.q2 >>
+
+
+\section{Quiz From List}
+
+<% for i, qn in enumerate([1, 7, 5]) %>
+<< i+1 >>. << QAs["q%s" % qn] >>
+<% endfor %>
+
+\section{Quiz From Params}
+
+<% if scramble %>
+<% set questions = shuffle(questions) %>
+<% endif %>
+
+<% for i, qn in enumerate(questions) %>
+<< i+1 >>. << QAs["q%s" % qn] >>
+<% endfor %>
+
+\section{Quiz With Answers}
+
+<% for i, qn in enumerate(questions) %>
+
+<< i+1 >>. << QAs["q%s" % qn] >>
+
+Answer: << QAs["a%s" % qn] >>
+
+<% endfor %>
+
+
+\end{document}
