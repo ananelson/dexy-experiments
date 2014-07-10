@@ -1,6 +1,9 @@
 from dexy.filters.templating_plugins import TemplatePlugin
 
 class MyCustomPlugin(TemplatePlugin):
+    """
+    This is a custom plugin.
+    """
     aliases = ['foo']
 
     def foo_method(self, text):
@@ -9,5 +12,5 @@ class MyCustomPlugin(TemplatePlugin):
     # dict keys returned by run are added to jinja template environment
     def run(self):
         return {
-                'foo' : self.foo_method 
+                'foo' : ("foo docs", self.foo_method,)
                 }

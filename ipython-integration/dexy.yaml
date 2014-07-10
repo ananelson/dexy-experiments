@@ -1,3 +1,6 @@
 .md|jinja|markdown|easyhtml:
+    - using-cell-contents.md|htmlsections:
+        - output: False
     - .ipynb|ipynb
-    - using-cell-contents.md|htmlsections
+    - .ipynb|ipynbcasper
+    - easyhtml: { js : '<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>' }
