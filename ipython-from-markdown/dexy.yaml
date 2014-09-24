@@ -5,5 +5,9 @@ latex:
     - .md|pandoc|latex:
         - pandoc: {
             ext: .tex,
+            # --self-contained generates a .tex file with pandoc's default
+            # LaTeX header/footer. You can instead use dexy's hd and ft filters
+            # to customize the header/footer. Some header/footer is needed in
+            # order to have a valid LaTeX file.
             args: "--self-contained"
           }
