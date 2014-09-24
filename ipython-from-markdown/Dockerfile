@@ -50,6 +50,11 @@ RUN pip install tornado
 ### "pandoc"
 RUN apt-get install pandoc
 
+### "texlive"
+RUN apt-get install texlive-latex-base
+RUN apt-get install texlive-latex-extra
+RUN apt-get install texlive-fonts-recommended
+
 ### "source-dexy"
 WORKDIR /tmp
 RUN git clone https://github.com/dexy/dexy

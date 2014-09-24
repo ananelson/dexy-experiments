@@ -2,4 +2,8 @@ ipynb:
     - .md|mdjup
 
 latex:
-    - .md|pandoc|latex
+    - .md|pandoc|latex:
+        - pandoc: {
+            ext: .tex,
+            args: "--self-contained"
+          }
