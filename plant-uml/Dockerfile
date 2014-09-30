@@ -42,10 +42,18 @@ RUN apt-get install graphviz
 
 ### "python-pip"
 RUN apt-get install python
+RUN apt-get install python-dev
 RUN apt-get install python-pip
 
 ### "dexy"
 RUN pip install dexy
+
+### "source-dexy"
+WORKDIR /tmp
+RUN git clone https://github.com/dexy/dexy
+WORKDIR /tmp/dexy
+RUN pip install -e .
+WORKDIR /
 
 ### "create-user"
 RUN useradd -m repro
