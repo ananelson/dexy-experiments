@@ -1,0 +1,11 @@
+jars:
+    - .jar:
+        - output: False
+
+.uml|plantuml:
+    - plantuml: { jar: plantuml-mit.jar }
+    - jars
+
+examples.uml|plantuml|-svg:
+    - plantuml: { jar: plantuml-mit.jar, ext: svg }
+    - jars
