@@ -1,0 +1,9 @@
+make-file.sh|sh:
+    # Dependency on exising.txt
+    - existing.txt
+    # Settings for the sh filter
+    - sh: {
+        output: True,
+        add-new-files: True,
+        additional-doc-settings: { output: True }
+    }
