@@ -1,0 +1,4 @@
+.lyx|lyx|htlatex|inliner:
+    - htlatex: { output: True, add-new-files: ".css" }
+    - .jpg
+    - .png
