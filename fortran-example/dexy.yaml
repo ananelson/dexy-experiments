@@ -1,0 +1,3 @@
+doc.md|jinja|markdown|easyhtml:
+    - hello.f|fclean|idio
+    - hello.f|fortran|idio
